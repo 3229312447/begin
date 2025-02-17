@@ -1,0 +1,17 @@
+{
+  // 继承自 @vue/tsconfig 提供的 dom 环境配置
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  // 包含的文件和文件夹
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  // 排除的文件和文件夹
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    // TypeScript 构建信息文件路径
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    // 路径别名配置
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
