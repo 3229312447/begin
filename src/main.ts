@@ -4,7 +4,7 @@ import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
-import 'virtual:svg-icons/register'
+// import 'virtual:svg-icons/register'
 
 // 中文
 import zhCn from 'element-plus/es/locale/lang/zh-cn'
@@ -24,5 +24,8 @@ app.use(router)
 
 // svg插件引入
 import 'virtual:svg-icons-register'
+
+// 全局样式引入
+import '@/styles/index.scss'
 
 app.mount('#app')
